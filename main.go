@@ -41,7 +41,7 @@ func getConfigFromJSON(file string) string {
 
 	payloadSTR := "------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"grant_type\"\r\n\r\n" + config.GrantType + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"client_id\"\r\n\r\n" + config.ClientID + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"client_secret\"\r\n\r\n" + config.ClientSecret + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"username\"\r\n\r\n" + config.Username + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW\r\nContent-Disposition: form-data; name=\"password\"\r\n\r\n" + config.Password + "\r\n------WebKitFormBoundary7MA4YWxkTrZu0gW--"
 
-	fmt.Println(payloadSTR)
+	//fmt.Println(payloadSTR)
 
 	return payloadSTR
 }
